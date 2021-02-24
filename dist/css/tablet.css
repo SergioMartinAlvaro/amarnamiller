@@ -14,13 +14,13 @@
     }
     
     .bodyContainer .frontScreen .frontScreen--left{
-        height: 100vh;
+        height: 50%;
         width: 100%;
         margin: 0 auto;
     }
     
     .bodyContainer .frontScreen .frontScreen--left .info {
-        height: 70%;
+        height: 50%;
         width: 75%;
         margin: auto;
         margin-top: 8rem;
@@ -56,9 +56,11 @@
     }
     
     .bodyContainer .frontScreen .frontScreen--right{
-        height: 100vh;
+        height: 50%;
         width: 100%;
         margin: auto;
+        margin-top: 144px;
+        margin-bottom: 144px;
     }
     
     .frontScreen--right_img {
@@ -95,7 +97,7 @@
     .informationScreen .container h2 {
         font-size: 3em;
         font-weight: 100;
-        margin-top: 32px;
+        margin-top: 144px;
         margin-bottom: 36px;
     }
 

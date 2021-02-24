@@ -21,4 +21,18 @@ document.getElementById("button-social").addEventListener("click",function() {
     }
     isSocialOpen = !isSocialOpen;
 
-})
+});
+
+window.addEventListener("scroll", function() {
+    if( document.documentElement.clientWidth > "1189") {
+           const distance = window.scrollY;
+    (document.getElementsByClassName("frontScreen")[0]).style.transform = `translateY(${distance *
+      1}px)`;
+    document.getElementsByClassName(
+      "pageLayout"
+    )[0].style.transform = `translateY(${distance * 0.3}px)`;
+     setTimeout(() => {
+      document.querySelector(".informationScreen .container").classList.add("animate-me");
+        }, 400); 
+    }
+  });
