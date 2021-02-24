@@ -1,0 +1,208 @@
+/* PORTADA */
+
+@media(min-width: 706px) and (max-width: 1188px) {
+
+    .header {
+        display: none;;
+    }
+    .bodyContainer .frontScreen{
+        height: auto;
+        width: 100%;
+        background: #1b1b1b;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bodyContainer .frontScreen .frontScreen--left{
+        height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .bodyContainer .frontScreen .frontScreen--left .info {
+        height: 70%;
+        width: 75%;
+        margin: auto;
+        margin-top: 8rem;
+        color: white;
+        text-align: center;
+    }
+    
+    .bodyContainer .frontScreen .frontScreen--left .info h1{
+        font-weight: bold;
+        font-size: 5em;
+    }
+    
+    .bodyContainer .frontScreen .frontScreen--left .info p{
+        line-height: 1.60;
+        font-size: 20px;
+        margin-top: 42px;
+    }
+
+    .bodyContainer .frontScreen .frontScreen--left .info button{
+        height: 64px;
+        width: 40%;
+        background: #F2C94C;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 115px;
+    }
+    
+    .bodyContainer .frontScreen .frontScreen--left .info button:hover {
+        background: white;
+        transition: 0.5s ease-in-out;
+    }
+    
+    .bodyContainer .frontScreen .frontScreen--right{
+        height: 100vh;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .frontScreen--right_img {
+        height: 80%;
+        width: 55%;
+        margin-top: 8rem;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .frontScreen--right_img img {
+        height: 100%;
+        width: 70%;
+    }
+
+     /* INFO CONCURSO */
+
+     .informationScreen {
+        height: auto;
+        width: 100%;
+        background: #1b1b1b;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+
+    .informationScreen .container {
+        width: 75%;
+        text-align: center;
+    }
+
+    .informationScreen .container h2 {
+        font-size: 3em;
+        font-weight: 100;
+        margin-top: 32px;
+        margin-bottom: 36px;
+    }
+
+    .informationScreen .container p:nth-child(n+1) {
+        font-size: 20px;
+        margin-top: 12px;
+        font-weight: 100;
+    }
+
+    .informationScreen .container p {
+        font-size: 20px;
+        font-weight: 100;
+        line-height: 1.50;
+    }
+
+    .informationScreen .container ol {
+        font-size: 20px;
+        margin-top: 36px;
+        font-weight: 100;
+        width: 95%;
+        text-align: center;
+    }
+    
+    .informationScreen .container ol p {
+        font-size: 20px;
+        margin-top: 36px;
+        font-weight: 100;
+        margin-top: 5px;
+        line-height: 1.50;
+    }
+    
+    .informationScreen .container button {
+        height: 64px;
+        width: 200px;
+        background: #F2C94C;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .informationScreen .container button:hover {
+        background: white;
+        transition: 0.5s ease-in-out;
+    }
+
+    /* AMARNA SCREEN */
+
+    .amarnaScreen {
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background: #1b1b1b;
+        color: white;
+    }
+
+    .amarnaScreen__container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .amarnaScreen__container_left {
+
+        width: 75%;
+        height: 50%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .amarnaScreen__container_right {
+        width: 45%;
+        height: auto;
+        margin: auto;
+    }
+
+    .amarnaScreen__container_right img {
+        margin-top: 164px;
+    }
+
+
+    .amarnaScreen__container_left h2 {
+        font-size: 3em;
+        font-weight: 100;
+        margin-top: 164px;
+    }
+
+    .amarnaScreen__container_left .container__button {
+        margin-top: 36px;
+        height: 64px;
+        width: 100%;
+    }
+
+    .amarnaScreen__container_left .container__button button {
+        height: 64px;
+        width: 200px;
+        background: #F2C94C;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 36px;
+    }
+    
+}
+

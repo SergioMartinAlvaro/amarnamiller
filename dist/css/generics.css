@@ -1,0 +1,32 @@
+.yellow {
+    color: #F2C94C;
+}
+
+.yellow-bold {
+    color: #F2C94C;
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.button-media {
+    width: 100%;
+}
+
+.button-media img{
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.button-media img:nth-child(2) {
+    margin-left: 64px;
+}
+
+.button-media__hover {
+    background: #F2C94C;
+    width: 100%!important;
+    transition: 0.5s ease-in-out;
+    border-radius: 10em;
+}
