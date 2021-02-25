@@ -23,10 +23,36 @@ document.getElementById("button-social").addEventListener("click",function() {
 
 });
 
+function smoothTo(id) {
+  document.getElementById(id).scrollIntoView({block: 'start', behavior: 'smooth'});
+}
+
+document.getElementById("button-start").addEventListener("click", () => {
+  smoothTo('info');
+})
+
+document.getElementById("header-info").addEventListener("click", () => {
+  smoothTo('info');
+})
+
+document.getElementById("header-amarna").addEventListener("click", () => {
+  smoothTo('amarna');
+})
+
+document.getElementById("header-about").addEventListener("click", () => {
+  smoothTo('about');
+})
+
 window.addEventListener("scroll", function() {
+
+    if(window.scrollY > 10) {
+      document.getElementsByClassName("header")[0].classList.add("backHeader");
+    } else {
+      document.getElementsByClassName("header")[0].classList.remove("backHeader");
+    }
     if( document.documentElement.clientWidth > "1189") {
            const distance = window.scrollY;
-    (document.getElementsByClassName("frontScreen")[0]).style.transform = `translateY(${distance *
+    (document.getElementsByClassName("mainContainer")[0]).style.transform = `translateY(${distance *
       1}px)`;
     document.getElementsByClassName(
       "pageLayout"
@@ -35,4 +61,5 @@ window.addEventListener("scroll", function() {
       document.querySelector(".informationScreen .container").classList.add("animate-me");
         }, 400); 
     }
+
   });

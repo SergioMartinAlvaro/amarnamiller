@@ -13,6 +13,7 @@
     height: 64px;
     width: 100%;
     position: fixed;
+    z-index: 2000;
 }
 
 .header .nav {
@@ -27,12 +28,12 @@
 
 .header .nav .nav--logo {
     height: 100%;
-    width: 65%;
+    width: 420px;
 }
 
 .header .nav .nav--menu {
     height: 100%;
-    width: 80%;
+    width: 780px;
     margin: auto;
 }
 
@@ -53,41 +54,62 @@
 /* PORTADA */
 
 @media(min-width: 1189px) {
-    .bodyContainer .frontScreen{
+
+    .mainContainer {
         height: 100vh;
         width: 100%;
         background: linear-gradient(to top, #F2C94C, 1%, #1B1B1B);
+    }
+
+    .frontScreen{
+        height: 100vh;
+        width: 1300px;
+        margin: auto;
         display: flex;
         flex-direction: row;
     }
     
-    .bodyContainer .frontScreen .frontScreen--left{
+    .frontScreen .frontScreen--left{
         height: 100vh;
         width: 100%;
+        max-width: 780px;
+        transition: 1s ease-in-out;
 
     }
+
+    @media(min-width: 1500px) {
+        .frontScreen .frontScreen--left {
+            transition: 1s ease-in-out;
+            margin-top: 15rem!important;
+        }
+
+        .frontScreen .frontScreen--right {
+            transition: 1s ease-in-out;
+            margin-top: 15rem!important;
+        }
+    }
     
-    .bodyContainer .frontScreen .frontScreen--left .info {
+    .frontScreen .frontScreen--left .info {
         height: 70%;
         width: 75%;
         margin: auto;
-        margin-top: 8rem;
+        margin-top: 10rem;
         float: right;
         color: white;
     }
     
-    .bodyContainer .frontScreen .frontScreen--left .info h1{
+    .frontScreen .frontScreen--left .info h1{
         font-weight: bold;
         font-size: 4.5em;
     }
     
-    .bodyContainer .frontScreen .frontScreen--left .info p{
+    .frontScreen .frontScreen--left .info p{
         line-height: 1.60;
         font-size: 18px;
         margin-top: 42px;
     }
 
-    .bodyContainer .frontScreen .frontScreen--left .info button{
+    .frontScreen .frontScreen--left .info button{
         height: 64px;
         width: 40%;
         background: #F2C94C;
@@ -96,41 +118,34 @@
         font-size: 20px;
         font-weight: bold;
         cursor: pointer;
-        margin-top: 115px;
+        margin-top: 84px;
     }
 
-    @media(min-width: 1189px) and (max-width:1409px) {
-        .bodyContainer .frontScreen .frontScreen--left .info button{
-        margin-top: 24px!important;
-        }
-    }
-
-    @media(min-width: 1410px) {
-        .bodyContainer .frontScreen .frontScreen--left .info button{
-            margin-top: 115px;
-        }
-    }
-    
-    .bodyContainer .frontScreen .frontScreen--left .info button:hover {
+     .frontScreen--left .info button:hover {
         background: white;
         transition: 0.5s ease-in-out;
     }
     
-    .bodyContainer .frontScreen .frontScreen--right{
+    .frontScreen .frontScreen--right{
         height: 90%;
         width: 100%;
+        max-width: 680px;
+        animation-name: opacity;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        transition: 1s ease-in-out;
 
     }
     
     .frontScreen--right_img {
         height: 70%;
         width: 75%;
-        margin-top: 8rem;
+        margin-top: 10rem;
     }
     
     .frontScreen--right_img img {
-        height: 100%;
-        width: 70%;
+        max-height: 500px;
+        max-width: 300px;
         margin-left: 144px;
     }
     
@@ -331,3 +346,12 @@
     }
 }
 
+@keyframes opacity {
+    from {
+        padding-top: 20px;
+        opacity: 0;
+    } to {
+        padding-top: 0;
+        opacity: 1;
+    }
+}
