@@ -191,19 +191,19 @@
 
     .amarnaScreen__container_left .container__button {
         margin-top: 36px;
-        height: 64px;
+        height: 44px;
         width: 100%;
     }
 
     .amarnaScreen__container_left .container__button button {
-        height: 64px;
+        height: 44px;
         width: 200px;
         background: #F2C94C;
         border: none;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
         cursor: pointer;
-        margin-top: 36px;
+        margin-top: 55px;
     }
     
 }
