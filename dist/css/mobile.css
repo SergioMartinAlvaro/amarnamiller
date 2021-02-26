@@ -146,6 +146,11 @@
         transition: 0.5s ease-in-out;
     }
 
+    .button-media__hover img {
+        max-height: 30px;
+        max-width: 30px;
+    }
+
     /* AMARNA SCREEN */
 
     .amarnaScreen {
@@ -210,7 +215,7 @@
     /* QUIENES SOMOS */
 
     .aboutScreen {
-        height: 100vh;
+        height: auto;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -269,6 +274,8 @@
     /*FOOTER*/
 
     .footer {
+        display: block;
+        float: left;
         height: 60vh;
         width: 100%;
         display: flex;

@@ -57,9 +57,6 @@ window.addEventListener("scroll", function() {
     document.getElementsByClassName(
       "pageLayout"
     )[0].style.transform = `translateY(${distance * 0.3}px)`;
-     setTimeout(() => {
-      document.querySelector(".informationScreen .container").classList.add("animate-me");
-        }, 400); 
     }
 
   });

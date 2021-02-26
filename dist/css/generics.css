@@ -31,6 +31,10 @@
     border-radius: 10em;
 }
 
+.button-media__hover:hover {
+  background: #F2C94C!important;
+}
+
 .backHeader {
   background-color: #1b1b1b;
 }
