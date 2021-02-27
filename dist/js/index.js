@@ -27,6 +27,10 @@ function smoothTo(id) {
   document.getElementById(id).scrollIntoView({block: 'start', behavior: 'smooth'});
 }
 
+function detectScrollEnd() {
+  return (window.innerHeight + window.scrollY) >= document.body.offsetHeight
+}
+
 document.getElementById("button-start").addEventListener("click", () => {
   smoothTo('info');
 })
@@ -66,13 +70,13 @@ window.addEventListener("scroll", function() {
     } else {
       document.getElementsByClassName("header")[0].classList.remove("backHeader");
     }
-    if( document.documentElement.clientWidth > "1189") {
-           const distance = window.scrollY;
-    (document.getElementsByClassName("mainContainer")[0]).style.transform = `translateY(${distance *
-      1}px)`;
-    document.getElementsByClassName(
-      "pageLayout"
-    )[0].style.transform = `translateY(${distance * 0.3}px)`;
+    if( document.documentElement.clientWidth > "1189" && !detectScrollEnd()) {
+        const distance = window.scrollY;
+        (document.getElementsByClassName("mainContainer")[0]).style.transform = `translateY(${distance *
+          1}px)`;
+        document.getElementsByClassName(
+          "pageLayout"
+        )[0].style.transform = `translateY(${distance * 0.3}px)`;
     }
 
   });
