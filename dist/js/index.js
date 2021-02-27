@@ -31,17 +31,12 @@ document.getElementById("button-start").addEventListener("click", () => {
   smoothTo('info');
 })
 
-document.getElementById("header-info").addEventListener("click", () => {
-  smoothTo('info');
-})
-
-document.getElementById("header-amarna").addEventListener("click", () => {
-  smoothTo('amarna');
-})
-
-document.getElementById("header-about").addEventListener("click", () => {
-  smoothTo('about');
-})
+function addSmoth(className, f) {
+  document.querySelectorAll(className).forEach(x => x.addEventListener("click", f));
+}
+addSmoth('.header-info', () => {smoothTo('info')});
+addSmoth('.header-amarna', () => {smoothTo('amarna')});
+addSmoth('.header-about', () => {smoothTo('about')})
 
 window.addEventListener("scroll", function() {
 
@@ -60,3 +55,29 @@ window.addEventListener("scroll", function() {
     }
 
   });
+
+  const menuBtn = document.querySelector('.menu-btn');
+  const hamburger = document.querySelector('.menu-btn__burger');
+  const nav = document.querySelector('.navR');
+  const menuNav = document.querySelector('.menu-nav');
+  const navItems = document.querySelectorAll('.menu-nav__item');
+  let showMenu = false;
+
+  menuBtn.addEventListener('click', toggleMenu);
+
+  function toggleMenu() {
+    if(!showMenu) {
+      hamburger.classList.add('open');
+      nav.classList.add('open');
+      menuNav.classList.add('open');
+      navItems.forEach(item => item.classList.add('open'));
+      showMenu = true;
+      
+    } else {
+      hamburger.classList.remove('open');
+      nav.classList.remove('open');
+      menuNav.classList.remove('open');
+      navItems.forEach(item => item.classList.remove('open'));
+      showMenu = false;
+    }
+  }

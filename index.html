@@ -16,13 +16,34 @@
             <div class="nav--logo"></div>
             <div class="nav--menu">
                 <ul>
-                    <li id="header-info">Info</li>
-                    <li id="header-amarna">Amarna Miller</li>
-                    <li id="header-about">Quienes Somos</li>
+                    <li id="header-info" class="header-info">Info</li>
+                    <li id="header-amarna" class="header-amarna">Amarna Miller</li>
+                    <li id="header-about" class="header-about">Quienes Somos</li>
                     <li>#DiaDeLaMujer</li>
                 </ul>
             </div>
         </nav>
+        <div class="navResponsive">
+            <div class="menu-btn">
+                <span class="menu-btn__burger"></span>
+            </div>
+            <nav class="navR">
+                <ul class="menu-nav">
+                    <li class="menu-nav__item">
+                        <a class="menu-nav__link header-info" id="header-info">Información</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a class="menu-nav__link header-amarna" id="header-amarna">Amarna Miller</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a class="menu-nav__link header-about" id="header-about">Quienes somos</a>
+                    </li>
+                    <li class="menu-nav__item">
+                        <a class="menu-nav__link">#DiaDeLaMujer</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main class="bodyContainer">
         <div class="mainContainer parallax">
@@ -86,7 +107,7 @@
                 </div>
             </div>
         </div>
-        <div class="aboutScreen">
+        <div class="aboutScreen" id="about">
             <div class="aboutScreen__container">
                 <div class="aboutScreen__left">
                     <div class="aboutScreen__left_logo">
@@ -105,7 +126,7 @@
                         Apostamos por la inclusión y promovemos la idea de que un mundo mejor es posible si prestamos atención y nos escuchamos
                         los unos a los otros
                     </p>
-                    <p id="about">
+                    <p>
                         El cambio está en marcha ¿Te unes al movimiento?
                     </p>
                 </div>
