@@ -34,9 +34,30 @@ document.getElementById("button-start").addEventListener("click", () => {
 function addSmoth(className, f) {
   document.querySelectorAll(className).forEach(x => x.addEventListener("click", f));
 }
-addSmoth('.header-info', () => {smoothTo('info')});
-addSmoth('.header-amarna', () => {smoothTo('amarna')});
-addSmoth('.header-about', () => {smoothTo('about')})
+addSmoth('.header-info', () => {
+  smoothTo('info');
+  if(document.documentElement.clientWidth < "1189") {
+    setTimeout(function() {
+      toggleMenu();
+    }, 400)
+  }
+});
+addSmoth('.header-amarna', () => {
+  smoothTo('amarna');
+  if(document.documentElement.clientWidth < "1189") {
+    setTimeout(function() {
+      toggleMenu();
+    }, 400)
+  }
+});
+addSmoth('.header-about', () => {
+  smoothTo('about');
+  if(document.documentElement.clientWidth < "1189") {
+    setTimeout(function() {
+      toggleMenu();
+    }, 400)
+  }
+})
 
 window.addEventListener("scroll", function() {
 
