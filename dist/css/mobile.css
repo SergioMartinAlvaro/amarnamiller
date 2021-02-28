@@ -438,8 +438,7 @@
         .mujerScreen__container-item {
             width: 43%;
             margin: auto;
-            height: 50%;
-            max-height: 300px!important;
+            height: auto;
             max-width: 500px!important;
             border: 1px solid white;
             display: block;
@@ -448,7 +447,64 @@
             padding-top: 20px;
             padding-right: 20px;
             padding-left: 20px;
+            padding-bottom: 20px;
         }
+
+        .item__header {
+            height: 4rem;
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 0px;
+            display: flex;
+            flex-flow: column nowrap;
+        }
+
+        .item-body {
+            text-align: center;
+            width: 80%;
+            padding-right: 40px;
+            margin-top: 80px;
+            margin-left: 20px;
+            line-height: 1.50;
+            font-size: 0.8em;
+            padding-bottom: 10px;
+        }
+
+        .item__header-photo {
+            height: 4rem;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .img-mujer {
+            border-radius: 100%;
+            height: 60px;
+            width: 60px;
+        }
+
+        .item__header p {
+            margin-top: 10px;
+            text-align: center;
+            font-weight: lighter;
+            font-size: 0.9em;
+        }
+
+        .item__header p:nth-child(1) {
+            margin-top: 10px;
+            font-weight: lighter;
+            font-size: 0.9em;
+        }
+
+        .item__header p:nth-child(2) {
+            margin-top: 5px;
+            font-weight: lighter;
+            font-size: 0.8em;
+        }
+
+        .mujerScreen__container:nth-child(1) {
+            margin-top: 300px;
+        }
+
 
     /*FOOTER*/
 
