@@ -63,6 +63,15 @@ addSmoth('.header-about', () => {
   }
 })
 
+addSmoth('.header-mujer', () => {
+  smoothTo('mujer');
+  if(document.documentElement.clientWidth < "1189") {
+    setTimeout(function() {
+      toggleMenu();
+    }, 400)
+  }
+})
+
 window.addEventListener("scroll", function() {
 
     if(window.scrollY > 10) {
