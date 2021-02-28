@@ -427,7 +427,7 @@
     
         .mujerScreen__container {
             width: 100%;
-            height: 80vh;
+            height: auto;
             margin-left: auto;
         }
     
@@ -507,7 +507,7 @@
 
     .footer {
         display: block;
-        float: left;
+        float: right;
         height: 60vh;
         width: 100%;
         display: flex;
