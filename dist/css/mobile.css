@@ -436,7 +436,7 @@
         }
     
         .mujerScreen__container-item {
-            width: 43%;
+            width: 63%;
             margin: auto;
             height: auto;
             max-width: 500px!important;
@@ -445,8 +445,6 @@
             margin-top: 6%;
             border-radius: 0.5em;
             padding-top: 20px;
-            padding-right: 20px;
-            padding-left: 20px;
             padding-bottom: 20px;
         }
 
@@ -454,20 +452,25 @@
             height: 4rem;
             width: 100%;
             margin-top: 20px;
-            margin-left: 0px;
             display: flex;
             flex-flow: column nowrap;
         }
 
         .item-body {
             text-align: center;
-            width: 80%;
-            padding-right: 40px;
+            width: 100%;
             margin-top: 80px;
-            margin-left: 20px;
+            text-align: center;
             line-height: 1.50;
             font-size: 0.8em;
             padding-bottom: 10px;
+
+        }
+
+        .item-body p {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
         }
 
         .item__header-photo {
