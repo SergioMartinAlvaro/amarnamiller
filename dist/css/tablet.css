@@ -446,9 +446,68 @@
             padding-left: 20px;
         }
 
+        .item__header {
+            height: 4rem;
+            width: 100%;
+            margin-top: 20px;
+            margin-left: 20px;
+    
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        .item-body {
+            width: 80%;
+            padding-right: 40px;
+            margin-top: 20px;
+            margin-left: 20px;
+            line-height: 1.50;
+            font-size: 0.8em;
+            padding-bottom: 10px;
+        }
+
+        .item__header-photo {
+            height: 4rem;
+            width: 20%;
+            margin-bottom: 10px;
+        }
+        .img-mujer {
+            border-radius: 100%;
+            height: 60px;
+            width: 60px;
+        }
+
+        .item__header p {
+            margin-top: 10px;
+            margin-left: 10px;
+            font-weight: lighter;
+            font-size: 0.9em;
+        }
+
+        .item__header p:nth-child(1) {
+            margin-top: 10px;
+            font-weight: lighter;
+            font-size: 0.9em;
+        }
+
+        .item__header p:nth-child(2) {
+            margin-top: 5px;
+            font-weight: lighter;
+            font-size: 0.8em;
+        }
+
+        .mujerScreen__container:nth-child(1) {
+            margin-top: 300px;
+        }
+
+
+
     /*FOOTER*/
 
+
     .footer {
+        display: block;
+        float: left;
         height: 60vh;
         width: 100%;
         display: flex;
