@@ -61,3 +61,8 @@
       transform: scale(1);
     }
   }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+  }

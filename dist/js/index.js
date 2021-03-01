@@ -8,11 +8,18 @@ document.getElementById("button-social").addEventListener("click",function() {
         let instagram = document.createElement("img");
         instagram.src = "dist/img/instagram.png";
         instagram.alt = "instagram";
+        instagram.addEventListener("click", function() {
+          location.replace("https://www.instagram.com/ensayossobrelaignorancia/?hl=es")
+        })
         social.appendChild(instagram);
         let facebook = document.createElement("img");
         facebook.src = "dist/img/facebook.png";
         facebook.alt = "facebook";
+        facebook.addEventListener("click", function() {
+          location.replace("https://www.facebook.com/pg/ensayossobrelaignorancia/posts/?ref=page_internal")
+        })
         social.appendChild(facebook);
+
         document.getElementById("button-social").appendChild(social);
         document.getElementById("button-social").classList.add("button-media__hover");
     } else {
@@ -76,8 +83,10 @@ window.addEventListener("scroll", function() {
 
     if(window.scrollY > 10) {
       document.getElementsByClassName("header")[0].classList.add("backHeader");
+      document.getElementById("btn-top").style.visibility = "visible";
     } else {
       document.getElementsByClassName("header")[0].classList.remove("backHeader");
+      document.getElementById("btn-top").style.visibility = "hidden";
     }
     if( document.documentElement.clientWidth > "1189" && !detectScrollEnd()) {
         const distance = window.scrollY;
@@ -115,3 +124,7 @@ window.addEventListener("scroll", function() {
       showMenu = false;
     }
   }
+
+  document.querySelector("#button-social2").addEventListener("click", function() {
+    window.location.replace("https://linktr.ee/amarnamiller");
+  })

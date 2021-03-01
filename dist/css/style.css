@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     font-family: Roboto;
+    scroll-behavior: smooth;
 }
 
 /* PORTADA */
@@ -39,6 +40,12 @@
         width: 420px;
     }
     
+    .header-logo {
+        margin-top: 10px;
+        height: 50px;
+        width: 120px;
+    }
+
     .header .nav .nav--menu {
         height: 100%;
         width: 780px;
@@ -57,8 +64,13 @@
         font-weight: 600;
         font-size: 16px;
         cursor: pointer;
+        height: 40px;
     }
     
+    .header .nav .nav--menu ul li:hover {
+        border-bottom: 5px solid #F2C94C;
+    }
+
     .mainContainer {
         height: 100vh;
         width: 100%;
@@ -213,10 +225,10 @@
         font-weight: bold;
         cursor: pointer;
         margin-top: 64px;
+        outline: none;
     }
 
     .informationScreen .container button:hover {
-        background: white;
         transition: 0.5s ease-in-out;
     }
 
@@ -354,6 +366,13 @@
         margin: auto;
     }
 
+    .mujerScreen__container h2 {
+        margin-left: auto;
+        font-size: 3em;
+        margin-bottom: 64px;
+        margin-left: 20px;
+    }
+
     .mujerScreen__container-item {
         width: 43%;
         height: 50%;
@@ -423,7 +442,59 @@
         color: white;
         align-items: center;
     }
+
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        width: 75%;
+        height: 100px;
+        margin: auto;
+        color: white;
+        margin-top: 300px;
+    }
+
+    .footer-left {
+        width: 100%;
+        height: 100px;
+        margin-top: auto;
+    }
+
+    .footer-left a {
+        margin-top: 20px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    .footer-center {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+
+    .footer-right {
+        width: 100%;
+        text-align: right;
+        height: 100px;
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    .footer-center img {
+        margin-top: auto;
+        height: 60px;
+        width: 180px;
+        margin: auto;
+    }
+
+    #btn-top {
+        display: none;
+    }
 }
+
 
 @keyframes opacity {
     from {

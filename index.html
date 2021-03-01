@@ -13,7 +13,11 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <div class="nav--logo"></div>
+            <div class="nav--logo">
+                <a href="#index">
+                    <img src="dist/img/ensayos.png" alt="header-logo" class="header-logo">
+                </a>
+            </div>
             <div class="nav--menu">
                 <ul>
                     <li id="header-info" class="header-info">Info</li>
@@ -45,7 +49,7 @@
             </nav>
         </div>
     </header>
-    <main class="bodyContainer">
+    <main class="bodyContainer" id="index">
         <div class="mainContainer parallax">
         <div class="frontScreen">
             <div class="frontScreen--left">
@@ -67,6 +71,12 @@
         </div>
     </div>
         <div class="pageLayout">
+            <div id="btn-top">
+                <a href="#index">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+
+            </div>
         <div class="informationScreen">
             <div class="container">
                 <h2 id="info">INFO DEL CONCURSO</h2>
@@ -117,30 +127,31 @@
                 </div>
                 <div class="aboutScreen__right">
                     <h2>Acerca de Ensayos sobre la Ignorancia</h2>
-                    <p>Tenemos un objetivo muy claro, “Dar voz a quien no tiene voz”.  Sencillamente Marcos cuenta en su programa de Podcast
-                        con todo tipo de personas para explorar el lado mas humano del entrevistado, segun sus palabras “Cualquier persona
+                    <p>Tenemos un objetivo muy claro, “Dar voz a quien no tiene voz”. <span class="yellow-bold">Sencillamente Marcos</span> cuenta en su programa de Podcast
+                        con todo tipo de personas para <span class="yellow-bold">explorar el lado mas humano del entrevistado</span>, segun sus palabras “Cualquier persona
                         tiene algo interesante que contar y  podemos aprender lecciones y experiencias escuchando tanto a nuestro artista favorito
                         como al peluquero del barrio o nuestra abuela.”
                     </p>
                     <p>
-                        Apostamos por la inclusión y promovemos la idea de que un mundo mejor es posible si prestamos atención y nos escuchamos
+                        <span class="yellow-bold">Apostamos por la inclusión</span> y promovemos la idea de que un mundo mejor es posible si prestamos atención y nos escuchamos
                         los unos a los otros
                     </p>
                     <p>
-                        El cambio está en marcha ¿Te unes al movimiento?
+                        El cambio está en marcha <span class="yellow-bold">¿Te unes al movimiento?</span>
                     </p>
                 </div>
             </div>
         </div>
         <div class="mujerScreen" id="mujer">
             <div class="mujerScreen__container">
+                <h2>Nuestras podcaster favoritas</h2>
                 <div class="mujerScreen__container-item">
                     <div class="item__header">
                         <div class="item__header-photo">
                             <img src="dist/img/julia.jpg" class="img-mujer" alt="Nieves" />
                         </div>
                         <div class="item__header-text">
-                            <p>Julia Otero</p>
+                            <p class="yellow">Julia Otero</p>
                             <p>Presentadora de radio</p>
                         </div>
                     </div>
@@ -161,7 +172,7 @@
                             <img src="dist/img/silvia.jpg" class="img-mujer" alt="Nieves" />
                         </div>
                         <div class="item__header-text">
-                            <p>Silvia Abril</p>
+                            <p class="yellow">Silvia Abril</p>
                             <p>Humorista</p>
                         </div>
                     </div>
@@ -179,7 +190,7 @@
                             <img src="dist/img/sara.jpg" class="img-mujer" alt="Nieves" />
                         </div>
                         <div class="item__header-text">
-                            <p>Sara Riveiro</p>
+                            <p class="yellow">Sara Riveiro</p>
                             <p>Periodista y comunicadora audiovisual</p>
                         </div>
                     </div>
@@ -197,7 +208,7 @@
                             <img src="dist/img/nieves.jpg" class="img-mujer" alt="Nieves" />
                         </div>
                         <div class="item__header-text">
-                            <p>Nieves Concostrina</p>
+                            <p class="yellow">Nieves Concostrina</p>
                             <p>Periodista y escritora</p>
                         </div>
                     </div>
@@ -210,10 +221,41 @@
             </div>
         </div>
         <div class="footer">
-            <p>¿Quieres contactar con nosotros?</p>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <a href="#paginaContacto">Contacta con nosotros</a>
+                </div>
+                <div class="footer-center">
+                    <img src="dist/img/ensayos.png" class="footer-image" alt="ensayos">
+                </div>
+                <div class="footer-right">
+                    <div class="footer-twitter">
+                        <a href="">
+                            <img src="dist/img/twitter.jpg" alt="twitter" class="icon">
+                        </a>
+                    </div>
+                    <div class="footer-spotify">
+                        <a href="https://open.spotify.com/show/2M6TaR1pp4jlyOkUe4v0dJ">
+                            <img src="dist/img/spotify.png" alt="spotify" class="icon">
+                        </a>
+                    </div>
+                    <div class="footer-instagram">
+                        <a href="https://www.instagram.com/ensayossobrelaignorancia/?hl=es">
+                            <img src="dist/img/instagram.png" alt="instagram" class="icon">
+                        </a>
+                    </div>
+                    <div class="footer-facebook">
+                        <a href="">
+                            <img src="dist/img/facebook.png" alt="facebook" class="icon">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     </main>
     <script src="dist/js/index.js"></script>
+    <script src="https://kit.fontawesome.com/de3fe887a0.js" crossorigin="anonymous"></script>
 </body>
 </html>
