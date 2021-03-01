@@ -124,7 +124,3 @@ window.addEventListener("scroll", function() {
       showMenu = false;
     }
   }
-
-  document.querySelector("#button-social2").addEventListener("click", function() {
-    window.location.replace("https://linktr.ee/amarnamiller");
-  })
