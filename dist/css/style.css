@@ -273,10 +273,17 @@
         border-bottom-right-radius: 1em;
     }
 
+    .amarnaTitle {
+        text-align: left;
+        width: 80%;
+        margin-left: 10%;
+    }
+
 
     .amarnaScreen__container_left h2 {
         font-size: 3em;
         font-weight: 100;
+
     }
 
     .amarnaScreen__container_left .container__button {
@@ -301,6 +308,17 @@
         margin-top: 20px;
         color: black;
         text-decoration: none;
+    }
+
+    .amarnaText {
+        font-size: 20px;
+        font-weight: 100;
+        margin-top: 36px;
+        line-height: 1.40;
+        text-align: left;
+        /* margin-left: auto; */
+        width: 80%;
+        margin-left: 10%;
     }
 
     /* QUIENES SOMOS */
